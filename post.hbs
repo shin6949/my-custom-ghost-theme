@@ -1,4 +1,5 @@
 {{!< default}}
+<script src="{{asset "js/share.js"}}"></script>
 
 {{#post}}
 
@@ -18,9 +19,9 @@
 
             <h1 class="gh-article-title">{{title}}</h1>
 
-            <div class="copy-link-container" style="text-align: right; margin-top: 10px;">
-                <button class="copy-link-btn" onclick="copyCurrentPostLink()" style="background: none; border: none; cursor: pointer;">
-                    <i class="bi bi-share-fill" style="font-size: 24px; color: black;"></i>
+            <div class="copy-link-container">
+                <button class="copy-link-btn" onclick="copyCurrentPostLink()">
+                    <i class="bi bi-share-fill icon-style"></i>
                 </button>
             </div>
 
@@ -33,10 +34,10 @@
 
         <div class="gh-content gh-canvas">
             {{content}}
-
-            <div class="copy-link-container" style="text-align: right; margin-top: 20px;">
-                <button class="copy-link-btn" onclick="copyCurrentPostLink()" style="background: none; border: none; cursor: pointer;">
-                    <i class="bi bi-share-fill" style="font-size: 24px; color: black;"></i>
+            
+            <div class="copy-link-container">
+                <button class="copy-link-btn" onclick="copyCurrentPostLink()">
+                    <i class="bi bi-share-fill icon-style"></i>
                 </button>
             </div>
         </div>
@@ -75,14 +76,3 @@
 </main>
 
 {{/post}}
-
-<script>
-    function copyCurrentPostLink() {
-        const postUrl = window.location.href;
-        navigator.clipboard.writeText(postUrl).then(() => {
-            alert("현재 글 링크가 복사되었습니다.");
-        }).catch(err => {
-            console.error("링크 복사에 실패하였습니다.\n에러:", err);
-        });
-    }
-</script>

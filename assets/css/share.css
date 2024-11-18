@@ -1,0 +1,15 @@
+.copy-link-container {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.copy-link-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-style {
+  font-size: 24px;
+  color: black;
+}

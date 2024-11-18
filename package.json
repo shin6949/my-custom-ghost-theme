@@ -55,7 +55,8 @@
         "type": "select",
         "options": [
           "Modern sans-serif",
-          "Elegant serif"
+          "Elegant serif",
+          "Nanum Gothic"
         ],
         "default": "Modern sans-serif"
       },
@@ -63,7 +64,8 @@
         "type": "select",
         "options": [
           "Modern sans-serif",
-          "Elegant serif"
+          "Elegant serif",
+          "Nanum Gothic"
         ],
         "default": "Modern sans-serif"
       }
